@@ -1,0 +1,43 @@
+pwd --> present working directory
+ls --> list contents
+cd --> change directory
+git init --> to initialize the git repository.
+git status 
+git add --a --> for adding all files 
+git add  _File name_ --> for adding particular file
+git commit -m " _Message_"
+git log 
+rm -rf .git --> to delete the current git repositary
+git clone  _url of website_ --> to add a remote git repository
+touch _file name_ --> to create new files in our directory
+## touch .gitignore --> is that file or directories (folders) in which if we add those file names in which we want to do changes 
+	but not reflect in git status.
+## For direct commit i.e skipping staging area :
+	git   commit   -a    -m    "_Message_"
+git rm   _File Name_ --> deletes file but need to be committed.
+git mv _File Name_   _New name of File_ --> For renaming a file or folder
+git rm --cached  _File Name_ --> For untracking file
+git log -p
+git log --stat
+git log --pretty=oneline --> to see all commit in one line
+git log --pretty=short 
+git log --since=2.days/2.months/3.years/5.weeks etc
+git restore --staged  _File name_ --> to unstage a file.
+git checkout -f --> to restore previous version of the file.
+git push -u origin master --> To push into GIT HUB repository
+git config --global alias.(new name)  original name--> to alias a command. 
+git checkout -b (branch name)--> to create a new branch
+	and then make changes to your file, add and commit sab same
+	Now to get back to the master branch use command:
+	git checkout master
+	to again go back to branch :
+	git checkout develop(which is my branch name)git 
+git branch--> To get names of all the branches
+git merge (branch name)--> to merge branch 
+git branch -v-> to see additional info about merging
+git branch --merged--> shows branches that are already merged
+git branch --no-merged--> shows branches that are not merged yet.
+git branch -d (branch name)--> deletes merged branch (to delete branch must be merged).
+git branch -D (branch name)--> deletes branch (kaisi bhi ho).
+git push (origin i.e remote server name) (branch name) --> to publish into github or online git server.
+git push -d (origin i.e remote server name) (branch name) --> to delete a branch on the online git server. 
