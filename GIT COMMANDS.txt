@@ -39,5 +39,32 @@ git branch --merged--> shows branches that are already merged
 git branch --no-merged--> shows branches that are not merged yet.
 git branch -d (branch name)--> deletes merged branch (to delete branch must be merged).
 git branch -D (branch name)--> deletes branch (kaisi bhi ho).
-git push (origin i.e remote server name) (branch name) --> to publish into github or online git server.
+
+# Adding a remote branch
+
+Follow the steps:
+1. New Repo
+2. @local system:
+	git config --global user.name <"Username">
+	git config --global user.email <email>
+3. git push -u origin maser will require:
+	3.1 user name -> enter it
+	3.2 passwd -> geneterate a token and enter it
+
+	
+git remote add <remote repo link>
+git push -u (origin i.e remote server name) (branch name) --> to publish into github or online git server.
 git push -d (origin i.e remote server name) (branch name) --> to delete a branch on the online git server. 
+
+
+# Tagging a particular commit
+git tag -a <tag name> <Commit_id> -m <"Message"> 
+
+# Removing a tag
+git tag -d <tag_name>
+
+#Reverting a commit
+git revert <commit_id>
+
+# changing the most recent commit
+git commit --amend (useful for removing typo in commit message)
